@@ -47,3 +47,19 @@
 		- Probably sticking to next and cannot use another frontend framework.
 
 
+### Folder Structure:
+- tailwind.config.ts
+	- already tailwind bootstrap with the folder configured in it.
+	- we are using app router in modern versions (nextjs 13+) and can add our components and add default theme in theme: extend .
+- next.config.mjs
+	- important when we reach monorepos and transpiling.
+- package.json
+	- has already our dependencies
+	- next built on top of react
+	- eslint -> lint and structure our project.
+		- important dependency that comes in our code base
+- app 
+	- most important folder and where we write our code
+	- page.tsx , layout.tsx 
+- components:
+	- cross shareable components and utilites.
