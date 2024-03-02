@@ -63,3 +63,17 @@
 	- page.tsx , layout.tsx 
 - components:
 	- cross shareable components and utilites.
+
+### Routing in Next:
+- Needed react-router-dom to route using explicit routing logic defined in the root comoponent.
+- bring external dependency .
+- Next is highly opinionated on how to do routing in next.
+- Next uses file based routing: < refer docs after class >
+	- Very popular way to create routes.
+	- This means the way we create files, determines what files we have created.
+	- Files created in app/ direction will result in how the routes are created.
+- page.tsx is only being rendered for the / route.
+- wont be rendered for any other routes.
+- to create a signup route :
+	- create a new folder in app router called signup 
+	- add a page.tsx and inside create a default function(name wont matter) and return from there.s
