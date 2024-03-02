@@ -77,3 +77,22 @@
 - to create a signup route :
 	- create a new folder in app router called signup 
 	- add a page.tsx and inside create a default function(name wont matter) and return from there.s
+- same to create more routes for other routes.
+- Dynamic routing done using :\[...courseID] in the app folder to catch everything with it, called as dynamic slugs. 
+### Server Side Rendering in Next:
+- Means that the HTML is created in the server and return back to the client.
+- Google Crawler will hit the particular page and return it back to us.
+- It is not a empty body any more and is more discoverable for a SEO bot.
+- similar to EJS templating (which itself is a server side rendering).
+- sepration of concerns not good for it.(both frontend and backend present in it).
+
+
+### layout.tsx:
+- it lets us wrap all of our child pages inside of some logic.
+- exports a metadata object (metadata): can change the title and description of it.
+- can also create routes inside nested routing also.
+- exports a component by default :
+	- first a html tag
+	- then a body tag with a classname properties of the font object
+- if we keep a component here , we will see this on top of every page even 404 ones.
+- every page that we create , irrespective of that first wrap everything that is being rendered.
