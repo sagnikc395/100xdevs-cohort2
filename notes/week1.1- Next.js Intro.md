@@ -109,4 +109,11 @@
 - Approach 2:
 	- using folder name as (auth) .
 	- nextjs will ignore the folder in the routes.
-	- 
+
+
+### components directory
+- keep the styles and reusuable components in the component directory
+- create a top-level folder called components and keep your components there.
+- can be names anything also
+- just make sure that it is kept in the content array in the tailwind config file.
+- to make the components reusuable and used across
