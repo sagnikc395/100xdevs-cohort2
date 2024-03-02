@@ -117,3 +117,17 @@
 - can be names anything also
 - just make sure that it is kept in the content array in the tailwind config file.
 - to make the components reusuable and used across
+
+
+### Client and Server Components:
+- Revise Again 
+- Nextjs wants us to identify our components whether client or server.
+- There are 2 types of components, either a client component or a server component.
+- as the name suggests:
+	- Server components are rendered on the server 
+	- Client components are pushed to the client to be rendered.
+- onClick handler is a client component, not a server component.
+- probably make signin a client component.
+- if we need SEO, make it a server component 
+- onClickHandler to be make client component.
+- add 'use client' on top of the file to make it a client component.
