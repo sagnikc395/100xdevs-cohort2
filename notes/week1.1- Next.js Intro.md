@@ -131,3 +131,14 @@
 - if we need SEO, make it a server component 
 - onClickHandler to be make client component.
 - add 'use client' on top of the file to make it a client component.
+- By default all components are server components.
+- when a component requires interactivity we need to add a client component.
+- useState, onClickHandler  etc. buttons that add these hooks, then we convert it into a client component.
+- whatever as far as i can go use client and then use rest as server component.
+- For SEO optimizing , create another components that is rendered client side (not require SEO optimized) , and the other component be SEO optimzed.
+- Defer as much as Client interactivity as possible and mark the other as server component.
+-  Issues:
+	Server has a client has a server has a client children ?
+	ref to the nextjs issue
+
+
