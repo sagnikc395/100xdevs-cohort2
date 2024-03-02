@@ -105,4 +105,8 @@
 - move both signin and signup in auth folder 
 - and make a global layout.tsx for the auth folder.
 - access using /auth/sign and /auth/signup to access the banner for different routing.
-- 
+- Problem is have to use /auth before routing to /signup and /signin
+- Approach 2:
+	- using folder name as (auth) .
+	- nextjs will ignore the folder in the routes.
+	- 
