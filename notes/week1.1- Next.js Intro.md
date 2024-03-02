@@ -98,4 +98,11 @@
 - every page that we create , irrespective of that first wrap everything that is being rendered.
 - can introduce a layout.tsx for all pages that start with /signin
 - **dont forget to get the children as props**
+
+### Merging routes:
+- Both want to merge the banner in signin and also in the signup page, but not on the route page.
+- Put all the autnetication routes in an auth folder 
+- move both signin and signup in auth folder 
+- and make a global layout.tsx for the auth folder.
+- access using /auth/sign and /auth/signup to access the banner for different routing.
 - 
