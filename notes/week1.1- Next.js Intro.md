@@ -96,3 +96,6 @@
 	- then a body tag with a classname properties of the font object
 - if we keep a component here , we will see this on top of every page even 404 ones.
 - every page that we create , irrespective of that first wrap everything that is being rendered.
+- can introduce a layout.tsx for all pages that start with /signin
+- **dont forget to get the children as props**
+- 
