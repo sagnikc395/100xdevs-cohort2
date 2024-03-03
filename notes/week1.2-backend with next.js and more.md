@@ -27,3 +27,18 @@
 - We want to do the data fetching in the nextjs server and that will talk to the backend server.
 - we would fetch the data from the server and add 
 
+### Doing the same in Next.js:
+- in page.tsx adding the handler of using get using axios.:
+	- make a async getUserData function
+- make a async component :
+	- to do async operations at the top of the component to fetch the data
+	- can't do in React.
+	- only in server components.
+	- the standard way now to do this in next to do asynchronous data fetching.
+- this component is not waterfalling model : hits the next.js server and pre-renders the data on the UI.
+### Adding a Loader:
+- what happens if the backend request takes a long time ? How to show the response on the UI.
+- the solution is a loader.
+- an opinionated thing out of the box provided by Next:
+	- for a loading that we are going to get stuck for the route add a loading.tsx file.
+	- During the time the await is getting called, the loading.tsx will get called.
