@@ -88,3 +88,5 @@
 - npx prisma init and define the model for the data in ORM.
 - add the database url in .env file 
 - make migrations on the database to create tables. using npx prisma migrate dev --name init_schema
+- revise again from this slide 9 ;
+- https://projects.100xdevs.com/tracks/nextjs-2/next-2-9
