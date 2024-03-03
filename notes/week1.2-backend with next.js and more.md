@@ -75,4 +75,5 @@
 - Popular way to deploy using Edge networks, but with less caching.
 - Databases are not on the same machine as the applications(almost always forever)
 - dont self host db most of the time; use 3rd party like neon, rds etc.(which have enough replication already)
-- 
+
+
