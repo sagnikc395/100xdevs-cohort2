@@ -8,3 +8,10 @@ export function GET() {
     name: "sagnikc395",
   });
 }
+
+export function POST() {
+  return Response.json({
+    email: "sagnik321@gmail.com",
+    name: "sagnikc395",
+  });
+}
