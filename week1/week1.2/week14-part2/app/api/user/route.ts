@@ -1,5 +1,7 @@
 // backend in next.js using api routes.
 
+import { NextRequest } from "next/server";
+
 //return a simple username and password
 
 export function GET() {
@@ -9,9 +11,12 @@ export function GET() {
   });
 }
 
-export function POST() {
+export async function POST(req: NextRequest) {
+  const body = await req.json();
+
+  console.log(body);
+
   return Response.json({
-    email: "sagnik321@gmail.com",
-    name: "sagnikc395",
+    message: "You are logged in!",
   });
 }

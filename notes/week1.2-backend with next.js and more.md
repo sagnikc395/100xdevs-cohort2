@@ -77,3 +77,5 @@
 - dont self host db most of the time; use 3rd party like neon, rds etc.(which have enough replication already)
 
 
+- useRouter -> navigate the history on button click.
+- 
