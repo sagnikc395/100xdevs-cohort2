@@ -58,3 +58,8 @@
 	- same like for frontend , except for page.tsx , we create route.ts
 - to create a GET handler for /api/user:
 	- export a GET() function that returns a JSON response with the data required.
+
+### Making frontend talk to own backend:
+- brute force: change the URL to our own backend.
+- wrong for a few reasons:
+- 
