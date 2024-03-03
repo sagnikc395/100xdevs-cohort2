@@ -54,6 +54,7 @@
 - moving backend into own app:
 	- creating a hard-coded user value and hardcoded name and email for it and address.
 - if we want to create a backend that returns api folder , create a api(inside app directory.) folder that will have the code inside it.
+- This is just a convention and can be any other folder-name etc.
 - inside that we create our folder structure.
 	- same like for frontend , except for page.tsx , we create route.ts
 - to create a GET handler for /api/user:
@@ -62,4 +63,16 @@
 ### Making frontend talk to own backend:
 - brute force: change the URL to our own backend.
 - wrong for a few reasons:
+
+### Difference between actual node.js code and server actions:
+- actual react deployment:
+	- 2 code bases -> react code  -> npm run build -> html,css and js files and put on S3 -> create a CDN (CloudFront distribution) and tell the distribution the backend where we will our frontend part .
+		- Frontend is independently deployed on CDN's that serve the CDN.
+	- backend code -> node.js code 
+		- deploy on a single machine by running node index.js 
+		- kept in a single place and the CDN's route the requests to this backend.
+- Next.js is also similarly deploying the BE ; so can't really distribute it via CDN. Effectively we are running a HTTP Server.
+- Popular way to deploy using Edge networks, but with less caching.
+- Databases are not on the same machine as the applications(almost always forever)
+- dont self host db most of the time; use 3rd party like neon, rds etc.(which have enough replication already)
 - 
