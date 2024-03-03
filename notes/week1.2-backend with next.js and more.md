@@ -77,5 +77,14 @@
 - dont self host db most of the time; use 3rd party like neon, rds etc.(which have enough replication already)
 
 
-- useRouter -> navigate the history on button click.
-- 
+### Completing the Signup
+- Create a signup component and connect to client componet.
+- useRouter -> navigate the history on button click. use from next/navigation otherwise will give useRouter was not unmounted error.
+
+
+### Connecting to Neon.db :
+- Create a postgres db on neon.tech.
+- install prisma and do npx prims init
+- npx prisma init and define the model for the data in ORM.
+- add the database url in .env file 
+- make migrations on the database to create tables. using npx prisma migrate dev --name init_schema
