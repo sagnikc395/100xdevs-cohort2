@@ -72,5 +72,11 @@
 	- buttons 
 	- description 
 	- comments 
-- Protip: build individual components and then glue these components together.
-- 
+- protip: build individual components and then glue these components together.
+- in src/components/VideoCard.tsx ->
+	- are where the components are being created.
+	- called as videocard and is a normal react component.
+	- components return html or other components recursively.
+	- these could have divs or spans or other html component that we have created or internal components recursively.
+	- here we write a lot of reusuable logic.
+	- 
