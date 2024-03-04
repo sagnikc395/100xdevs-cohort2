@@ -79,4 +79,5 @@
 	- components return html or other components recursively.
 	- these could have divs or spans or other html component that we have created or internal components recursively.
 	- here we write a lot of reusuable logic.
-	- 
+- keep images in public/ folder , this contains our assets.
+- 
