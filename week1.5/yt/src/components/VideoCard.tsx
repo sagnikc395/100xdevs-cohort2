@@ -1,6 +1,9 @@
+import { StaticImageData } from "next/image";
+import Image from "next/image";
+
 type VideoCardProps = {
-  thumbnail: string;
-  profilepic: string;
+  thumbnail: StaticImageData;
+  profilepic: StaticImageData;
   title: string;
   author: string;
   views: string;
@@ -10,13 +13,10 @@ type VideoCardProps = {
 export function VideoCardComponent(props: VideoCardProps) {
   return (
     <div>
-      <img src={props.thumbnail} className="rounded-xl"></img>
+      <Image src={props.thumbnail} className="rounded-xl" />
       <div className="grid grid-cols-12">
         <div className="col-span-1">
-          <img
-            className="rounded-2xl w-20 h-20 p-2"
-            src={props.profilepic}
-          ></img>
+          <Image className="rounded-2xl w-20 h-20 p-2" src={props.profilepic} />
         </div>
         <div className="col-span-11 pt-5">
           <div className="pl-5 text-slate-100">{props.title}</div>
