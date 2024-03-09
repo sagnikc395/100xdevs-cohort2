@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0d584f533fc50767",
+        "id": "7b435a0b8ea64406",
         "type": "tabs",
         "children": [
           {
-            "id": "56e098e1883f242f",
+            "id": "26633cfd0c2e4db6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week1.5/tailwind+next.js youtube clone.md",
+                "file": "week2/why docker ?.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week1.5/tailwind+next.js youtube clone.md",
+                "file": "week2/why docker ?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week1.5/tailwind+next.js youtube clone.md",
+                "file": "week2/why docker ?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week1.5/tailwind+next.js youtube clone.md"
+                "file": "week2/why docker ?.md"
               }
             }
           }
@@ -147,12 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79ac68615eb21c77",
+  "active": "26633cfd0c2e4db6",
   "lastOpenFiles": [
+    "Screenshot 2024-03-09 at 7.22.10 PM.png",
+    "week2/Screenshot 2024-03-09 at 7.15.10 PM.png",
+    "week1.5/tailwind+next.js youtube clone.md",
+    "week2/why docker ?.md",
+    "week2",
     "week1.5/Screenshot 2024-03-04 at 9.09.10 AM.png",
     "week1.5/Screenshot 2024-03-04 at 8.51.11 AM.png",
     "week1/week1.2-backend with next.js and more.md",
-    "week1.5/tailwind+next.js youtube clone.md",
     "week1.5",
     "week1",
     "week1/week1.1- Next.js Intro.md",

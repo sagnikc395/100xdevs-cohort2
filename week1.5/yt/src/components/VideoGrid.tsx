@@ -42,7 +42,7 @@ export function VideoGrid() {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       {VIDEOS.map((video) => {
         return (
-          <div>
+          <div className="p-2">
             <VideoCardComponent
               thumbnail={video.thumbnail}
               profilepic={video.profilepic}
