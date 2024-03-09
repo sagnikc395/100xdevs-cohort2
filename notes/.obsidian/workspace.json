@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week2/why docker ?.md",
+                "file": "week2/docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week2/why docker ?.md",
+                "file": "week2/docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week2/why docker ?.md",
+                "file": "week2/docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week2/why docker ?.md"
+                "file": "week2/docker.md"
               }
             }
           }
@@ -152,7 +152,7 @@
     "Screenshot 2024-03-09 at 7.22.10 PM.png",
     "week2/Screenshot 2024-03-09 at 7.15.10 PM.png",
     "week1.5/tailwind+next.js youtube clone.md",
-    "week2/why docker ?.md",
+    "week2/docker.md",
     "week2",
     "week1.5/Screenshot 2024-03-04 at 9.09.10 AM.png",
     "week1.5/Screenshot 2024-03-04 at 8.51.11 AM.png",

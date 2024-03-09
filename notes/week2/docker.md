@@ -1,4 +1,4 @@
-- Why introduced ?
+- Why Docker was introduced ?
 	- container orchaestration is dependent on docker and kubernetes.
 	- to run processes in an isolated environment -> 
 		- run code in isloated manner for leetcode/ replit
@@ -33,10 +33,35 @@
 ### Docker Engine:
 - Open source containerisation tech that allows developers to package applications into containers.
 - Contains are standardised executable components containing application source code with the OS libraries and its dependencies required to run that code in any environment.
-## Docker CLI:
+### Docker CLI:
 - Cli interface to talk to docker engine and lets us start/stop/list services .
 ### Docker Registry:
 - Store where the images are stored.
 - Eg: mongo, mysql etc.
 - depends on where you want to push it.
 - most open source projects keep on the docker registry.
+
+
+
+
+
+### Creating a Dockerfile:
+- Generally created in the root folder.
+- commands to give:
+	- create a base image :
+		- FROM node:16-alpine
+	- creating a working directory: where should we run the commands for all the commands that are going to come:
+		- WORKDIR /app
+	- **Copy over everything from this folder to the working directory of the image**
+		- COPY . . 
+	- Run the commands :
+		- RUN npm install
+		- RUN npm run build 
+		- RUN npx prisma generate 
+	- (note these steps are just to setup the environment and build artifacts)
+	- Expose a port for the docker container to listen to 
+		- EXPOSE 3000
+	- whatever after in cmd runs when we start the image/ container and we write cmd on things that actually start the thing.
+		- CMD ["node" ,"dist/index.js"]
+- use .dockerignore to ignore some files.
+- 
