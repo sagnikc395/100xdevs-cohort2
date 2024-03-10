@@ -64,4 +64,14 @@
 	- whatever after in cmd runs when we start the image/ container and we write cmd on things that actually start the thing.
 		- CMD ["node" ,"dist/index.js"]
 - use .dockerignore to ignore some files.
+
+
+
+### DIND: Docker inside Docker.
+
+
+### More Docker Commands:
+- docker exec: to get shell access inside a container.
+	- and run command on a image.
+- docker exec -it <\COMMAND>
 - 
