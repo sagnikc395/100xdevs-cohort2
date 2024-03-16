@@ -1,0 +1,47 @@
+- mono repository :
+	- all different code should be be present in a single github repo and not multiple github repo.
+	- everything is in a single folder, holds frontend , backend and devops also
+	- apps/ , packages/ :
+		- apps/ contains the backend and and configs
+		- packages/ have ui and common utiltiies 
+		- can also have infra , deploy for infra and deploy stats for the repos.
+	-  apps and packages are top-level applications and are present according to conventions.
+	- most of the time present, dont need to setup 
+- why monorepos  ?
+	- why not simple folders ?
+		- why cant directly store services in various top-level folders ?
+		- should actually :
+			- services are highly decoupled and dont share any code 
+	- Some code will be like this ie shared code , monorepos are usually a better option to share code :
+		- ![[Screenshot 2024-03-16 at 7.10.31 PM.png]]
+	- if some codesharing that needs to happen, monorepos are the best options.
+	- shared code reuse
+	- enhanced collaboration 
+	- optimized builds and CI/CD : Turborepo offers smart caching to build optimized builds and uses executions strategies to reduce builds and build times.
+	- shared eslint config: same code conventions and same linter for all of the projects in a single place.
+	- centralized tooling and configuration : managing build tools, formatters and other configurations.
+- Common monorepo frameworks in Node:
+	- lerna -> og monorepo framework.
+	- nx -> similar stuff , strictly monorepo framework
+	- turborepo -> not exactly monorepo framework, under the hood let us choose whether to use npm workspaces, yarn workspaces and give something on top of it.
+	- npm/yarn workspaces -> built it to the package manager 
+	- probably use turborepo, as use monorepos on steroids.
+	- one of vercel's best acquisitions.
+- Build System vs Build System Orchestrator vs Monorepo Framework:
+	- Build System:
+		- tsc is a build system, gen js code from ts
+		- vite for react projects
+		- transforming source code written by developers to binary 
+		- make , cmake , cargo etc.
+		- also transforms the resultant code/binary into a minified versions, removing the debug symbols.
+	- Monorepo Framework:
+		- provides tools and conventions for managing projects that contain multiple packages or applications for shared code and for also defining the workspaces.
+	- Turborepo is special:
+		- It is a build system orchestrator 
+		- how it provide top of these things like nx, lerna etc.
+		- doesn't directly perform transpilation , but rather define task in its configuations that provides other tools that perform these transformations and changes .
+		 ![[Screenshot 2024-03-16 at 7.32.31 PM.png]]
+		- it lets us schedule these builds in a certain way and lets us build these in a parallel way.
+		- Dependency management during builds
+		- caching during builds.
+- 
