@@ -44,4 +44,10 @@
 		- it lets us schedule these builds in a certain way and lets us build these in a parallel way.
 		- Dependency management during builds
 		- caching during builds.
-- 
+- Folder Structure:
+	- apps/web -> nextjs website 
+	- apps/docs -> docs website that holds all the docs related to the project 
+	- <\helper pacakges>
+		- packages/ui -> ui packages for both web and docs 
+		- packages/typescript-config -> shareable TS configuration
+		- packages/eslint-config -> shareable ESLint configuration.
