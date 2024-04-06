@@ -1,0 +1,16 @@
+- week-17-live about PayTM wallet and 3 issues present to pick and solve.
+- clone and run it locally yourself.
+- timescaledb to store time scale datas -> to render charts and stuff.
+- to create a single database and balance entry at each data base point.
+- npx prisma migrate dev ->
+	- to migrate schema to the neon db
+- npx prisma db push ->
+	- to seed data and create a seed.ts file and seed some initial file.
+	- check packages/db/seed.ts file
+	- dont store decimals in database in financial database.for precision issues.
+	- some user data locally would be present.
+- check apps.user-app and run npm run dev and get the output in 3000 and 3001 .
+- finish issues:
+	- finish onramps are not complete yet.
+	- need to create a onramp to onramp the user on creating money.
+	- 

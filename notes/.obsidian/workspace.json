@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "3594fade1b018d43",
+        "id": "830f86fe9f99c1cf",
         "type": "tabs",
         "children": [
           {
-            "id": "c6fd9a7765b303c8",
+            "id": "ce11bb48fce662cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "week6/week6.1- websockets.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e07f0109829d0d52",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "week6/week6.1- websockets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "week6/week6.1- websockets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "week6/week6.1- websockets.md"
+              }
             }
           }
         ]
@@ -138,14 +147,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c6fd9a7765b303c8",
+  "active": "ce11bb48fce662cb",
   "lastOpenFiles": [
-    "Projects/Project - 1 - Paytm Clone.md",
     "Screenshot 2024-03-23 at 7.35.00 PM.png",
+    "week6/week6.1- websockets.md",
+    "week6",
     "Screenshot 2024-03-23 at 7.27.14 PM.png",
     "Screenshot 2024-03-23 at 7.26.33 PM.png",
     "Screenshot 2024-03-23 at 7.24.57 PM.png",
     "Screenshot 2024-03-23 at 7.23.26 PM.png",
+    "week5/notes.md",
+    "week5",
+    "week1/week1.2-backend with next.js and more.md",
+    "week4",
+    "week1/Untitled.md",
+    "week1.5/tailwind+next.js youtube clone.md",
+    "Projects/Project - 1 - Paytm Clone.md",
     "Projects/Screenshot 2024-03-23 at 7.14.47 PM.png",
     "Screenshot 2024-03-23 at 7.21.44 PM.png",
     "Projects",
@@ -155,11 +172,9 @@
     "week3/turborepo and monorepo.md",
     "week3",
     "week1/week 1.3 - nextjs backend extended.md",
-    "week1/week1.2-backend with next.js and more.md",
     "week2/Docker - 2.md",
     "week2/Screenshot 2024-03-10 at 8.05.30 PM.png",
     "week2/docker.md",
-    "week1.5/tailwind+next.js youtube clone.md",
     "week2",
     "week1.5",
     "week1",
