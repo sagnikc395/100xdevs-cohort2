@@ -28,13 +28,34 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 //native http library
-const http_1 = __importDefault(require("http"));
+//import http from "http";
 const ws_1 = __importStar(require("ws"));
-const server = http_1.default.createServer(function (request, response) {
-    console.log(new Date() + " Received request for " + request.url);
-    response.end("hi there");
-});
-const wss = new ws_1.WebSocketServer({ server });
+const express_1 = __importDefault(require("express"));
+// const server = http.createServer(function (request: any, response: any) {
+//   console.log(new Date() + " Received request for " + request.url);
+//   response.end("sagnik here");
+// });
+const app = (0, express_1.default)();
+const httpServer = app.listen(8080);
+const wss = new ws_1.WebSocketServer({ server: httpServer });
+// wss.on("connection", function connection(ws) {
+//   ws.on("error", console.error);
+//   ws.on("message", function message(data, isBinary) {
+//     // for every client that is currently connected to the
+//     // websocket server , if the socket connection is to open to them
+//     // and then send the  data
+//     //broadcast to every client.
+//     wss.clients.forEach(function each(client) {
+//       if (client.readyState === WebSocket.OPEN) {
+//         client.send(data, { binary: isBinary });
+//       }
+//     });
+//   });
+//   ws.send("Hello! Message From Server!!");
+// });
+// server.listen(8080, function () {
+//   console.log(new Date() + " Server is listening on port 8080");
+// });
 wss.on("connection", function connection(ws) {
     ws.on("error", console.error);
     ws.on("message", function message(data, isBinary) {
@@ -45,7 +66,4 @@ wss.on("connection", function connection(ws) {
         });
     });
     ws.send("Hello! Message From Server!!");
-});
-server.listen(8080, function () {
-    console.log(new Date() + " Server is listening on port 8080");
 });

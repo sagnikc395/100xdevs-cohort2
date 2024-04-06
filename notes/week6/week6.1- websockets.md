@@ -18,3 +18,4 @@
 	- however it can go up and down , so not a good idea to even create a client.
 
 - the first connection that the browser makes is an http request, later it gets upgraded to a websocket connection.
+- ws library allow us to do very fine grained control over sending data with websockets.
