@@ -4,6 +4,8 @@ function App() {
   const [socket, setSocket] = useState<null | WebSocket>(null);
 
   const [latestMsg, setlatestMsg] = useState("");
+
+  const [message, setMessage] = useState("");
   useEffect(() => {
     const socket = new WebSocket("ws://localhost:8080");
     socket.onopen = () => {
@@ -15,6 +17,10 @@ function App() {
       setlatestMsg(msg.data);
     };
 
+    //cleanup socket
+    return () => {
+      socket.close();
+    };
   }, []);
 
   if (!socket) {
@@ -23,7 +29,11 @@ function App() {
 
   return (
     <>
-      <input></input>
+      <input
+        onChange={(e) => {
+          setMessage(e.target.value);
+        }}
+      ></input>
       <button
         onClick={() => {
           socket.send("send data");
