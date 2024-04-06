@@ -23,4 +23,8 @@
 - to connect to a react app:
 	- the browser talked to our react code using axios / fetch api to connect -> HTTP connection.
 	- for websocket connections we can connect using the websocket api.
-	- 
+
+### for next.js :
+- make sure it is a client component.
+- if we dont make the specific component a client component, the next server will connect to the ws layer we dont want that.
+- 
