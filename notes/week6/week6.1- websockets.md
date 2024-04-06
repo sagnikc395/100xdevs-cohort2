@@ -19,3 +19,8 @@
 
 - the first connection that the browser makes is an http request, later it gets upgraded to a websocket connection.
 - ws library allow us to do very fine grained control over sending data with websockets.
+- server can be connected from browser, react, mobile ,other backend app etc.
+- to connect to a react app:
+	- the browser talked to our react code using axios / fetch api to connect -> HTTP connection.
+	- for websocket connections we can connect using the websocket api.
+	- 
