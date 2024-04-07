@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e07f0109829d0d52",
@@ -148,6 +149,8 @@
   },
   "active": "ce11bb48fce662cb",
   "lastOpenFiles": [
+    "Screenshot 2024-04-07 at 7.39.12 PM.png",
+    "Screenshot 2024-04-07 at 7.38.29 PM.png",
     "Screenshot 2024-04-07 at 7.22.53 PM.png",
     "Screenshot 2024-04-07 at 7.22.32 PM.png",
     "week6/Screenshot 2024-04-07 at 7.17.11 PM.png",
@@ -158,7 +161,6 @@
     "Screenshot 2024-03-23 at 7.27.14 PM.png",
     "Screenshot 2024-03-23 at 7.26.33 PM.png",
     "Screenshot 2024-03-23 at 7.24.57 PM.png",
-    "Screenshot 2024-03-23 at 7.23.26 PM.png",
     "week6/week6.1- websockets.md",
     "week6",
     "week5/notes.md",
@@ -168,7 +170,6 @@
     "week1/Untitled.md",
     "week1.5/tailwind+next.js youtube clone.md",
     "Projects/Project - 1 - Paytm Clone.md",
-    "Projects/Screenshot 2024-03-23 at 7.14.47 PM.png",
     "Projects",
     "overview.md",
     "week3/turborepo and monorepo.md",

@@ -59,3 +59,55 @@
 	- ![[Screenshot 2024-04-07 at 7.22.53 PM.png]]
 	- using websockets and messaging queues.
 	- this is where we need a messaging queue and pub/subs.
+### Redis:
+- ~~open-source~~ , in-memory data structure store used as a db, cache and message broker.
+- ability to keep all the data in memory, which allows for high performance and low-latency access to data.
+- dont use this as your primary database.
+- you can, but dont ! 😓
+- use case:
+	- aggressively used for caching data.
+	![[Screenshot 2024-04-07 at 7.38.29 PM.png]]
+	- can do distributed caching :
+		- if 1 server can do and multi server can check.
+		- ![[Screenshot 2024-04-07 at 7.39.12 PM.png]]
+- to cache the number of requests that go to our database.
+- in-memory datastore -> destroyed in the process is destroyed. what if the process dies?
+	- also need to be in-memory but also want to recover it.
+	- here also a similar architecture is used in redis.
+		- we can similarly recover the state before it goes down.
+	- way1: maintain  a queue of every event:
+		- if it ever goes down, replay all these events.
+		- append only file called Append Only File (AOF)
+		- have literally have a record of all the events from the beginning and recover your inmemory approach.
+	- way2: (better approach) snapshoting:
+		- we can snapshot the current order book every 1 hour.
+		- we can pick the latest snapshots and the queue order and recover from it.
+		- Saved in a RDB(Redis Database ) File to save the data in a specified time snapshot.
+	- Postgres also has the concept of the Write Ahead File (WAF).
+
+- Redis is message broker ->
+	- messaging queues + pub subs
+
+### Redis as DB:
+- SET/GET/DEL
+	- set mykey "hello"
+	- can only stored a string not a object.
+	- get mykey
+	- del mykey
+- hash set -> HSET/ HGET/HDEL
+	- multiple data with the same key , use a hashset
+	- HSET user:100 name "sagnik" email "sagnikc321@gmail.com"
+	- HGET user:100 name 
+	- HGET user:100 email
+### Redis as a Queue:
+- pushing to a queue:(left end)
+	- LPUSH problems 1
+	- LPUSH problems 2
+- popping from a queue:(right end)
+	- RPOP problems 
+	- RPOP problems
+- Blocking the thread until something comes to the problems queue:
+	- BRPOP problems 1
+	- BLPOP problems 123 
+### Redis with Nodejs:
+- refer to the directions given in the 100xdevs notes.
