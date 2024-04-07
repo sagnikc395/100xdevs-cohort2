@@ -1,0 +1,61 @@
+### why:
+- how does one backend system talk with other backend system.
+- ![[Screenshot 2024-04-07 at 7.04.45 PM.png]]
+- pubsubs and mq are always used for used 2 backends to talk to each other.
+- Learning about :
+	- Queues
+	- PubSubs 
+	- Redis
+
+### leetcode backend structure:
+- where does a queue come into the picture ?
+- where does a pub/sub come into the picture ?
+- pub/subs without redis?
+	- yes! many libraries and projects
+	- SNS in AWS.
+	- many other for pubsubs.
+- queues?
+	- rabbitmq
+	- RabbitMQ
+	- SQS
+- Simple architecture :
+	- ![[Screenshot 2024-04-07 at 7.10.12 PM.png]]
+	- whenever user in leetcode.com and user starts to submit a problem,  a request should go the primary backend server.
+	- {problem_id:, code:"",lang:\<list>}, the code is pushed onto a queue.
+	- users want to do a long expensive operation,  we probably want to upscale and downscale workers depending on the length of the queue.
+	- why not directly to backend ?
+		- what if the send code which is malicious ?
+			- CPU of the primary backend is used other.
+			- rather run the code someplace else -> a worker node.
+			- why to pick a queue ? what if 100 people send a code ? 
+			- Q: isnt the load guranteed by the load balancer rather than a queue , assuming horizontal scaling ?
+			- if everyone is trying to do a very expensive operation very fast, we can smoothen out the operation.
+		- since there is a async backend process it.
+		- we can auto scale our workers depending on the load.
+		- Eg: good example of this is video transcoding.
+			- Take some time for the video to process.
+			- video transfer to 4-5 different resolutions -> expensive operations.
+			- the video goes to a queue and transcode each part.
+- **what are pub/subs?**
+	- once it has been picked up, the worker has to tell whether accepted or rejected.
+	- leetcode uses polling on its site.
+	- can use websockets here -> browser wont overwhelm the primary backend and the primary database. worker can check and see if it submitted or not.
+	- what if the server could push ?
+		- tells the browser and submit
+		- for pushing events from server to client we can use websockets.
+	- ![[Screenshot 2024-04-07 at 7.17.11 PM.png]]
+	- what happens if it has a persistent connection to a web socket server.
+	- the worker process it and can signal it if the user with the given id is connected or not.
+	- that is how the worker can talk to a websocket server and talk with the client.s
+	- worker cannot directly connect to a browser
+		- they are transaction based, 
+		- they are at most connected to a pub/sub.
+	- whenever the worker completed the transaction, they can send to the pub/sub which can connect to the websocket.
+		- the reason for it is that we have in the real world we have a fleet of web socket servers and our user can be connected to anyone .
+		- whenever the worker is done , it doesn't know whether to send to ws1 ws2 or ws3.
+		- whenever the user is connected to the websocket layer, it can subscribe to some event userid1 and the worker can publish to the pubsub -> this worker can thereby directly reach to the websocket.
+	- multiple websocket server can connect to the same pub/sub and the workers can similarly.
+- **Final Architecture**:
+	- ![[Screenshot 2024-04-07 at 7.22.53 PM.png]]
+	- using websockets and messaging queues.
+	- this is where we need a messaging queue and pub/subs.
