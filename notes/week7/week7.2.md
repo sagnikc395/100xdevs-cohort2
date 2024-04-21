@@ -34,3 +34,9 @@
 
 - using a class to abstract away operations logic and make it more abstract for end user.
 - using a class like GameManager
+- singleton pattern-> anythign you want init only once and not only allow people to create new instance.
+- singleton and strategy are mostly used and others are rarely used in js
+	- make the constructor private
+	- can;t be made from outside the class, but we can make from inside the class using the static variables.
+	- these attributes are associated with the class and not with the objects for static variables.
+- 

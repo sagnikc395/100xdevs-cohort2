@@ -13,8 +13,24 @@ type Game = {
 class GameManager {
   games: Game[] = [];
   moves: string[] = [];
-  constructor() {
+  // type of the instance will be of the GameManager type only
+  //as this has to create a new instance itself
+  private static instance: GameManager;
+  private constructor() {
     this.games = [];
+  }
+
+  static getSingleton() {
+    //add logic to init singleton pattern constructor
+    //called from inside the class
+    //const manager = new GameManager();
+    //this will create a single instnace and not create again and again
+
+    if (GameManager.instance) {
+      return GameManager.instance;
+    }
+    GameManager.instance = new GameManager();
+    return GameManager.instance;
   }
 
   public addMove(gameId: string, move: string) {
@@ -40,4 +56,4 @@ class GameManager {
     console.log(this.moves);
   }
 }
-export const gameManager = new GameManager();
+export const gameManager = GameManager.getSingleton();
