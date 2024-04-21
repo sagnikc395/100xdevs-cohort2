@@ -1,0 +1,34 @@
+- state management in the backend 
+- standard ways to do state management in the frontend and in the backend 
+- how to maintain state in js process
+- decentish way to store state and is not useful 
+- useful for state management to do better state management on the backend.
+- index.ts(new event done sent to stores) -> stores.ts (export games states) <- logger.ts(logs the state and real time updates) 
+- where and how to store the data in our backend ?
+	- game like data :
+		- chess data 
+		- coordinates 
+	- or just a variable and shove there
+- using singleton pattern 
+- can also use redux on the backend for state mangement
+- implement pub subs + singleton pattern 
+	- common pattern used in many places.
+- usually we use a stateless varibales
+	- dont keep things on the frontned and shove them to backend 
+	- to maintain consistency 
+	- all web2 crud apps are stateless and are very easy to scale
+- stateful server 
+	- need to connected to same server stored in memory
+	- stickiness 
+	- hard to scale 
+	- user is changing location very frequently.
+	- everything stored in varibales.
+	- not stored in database.
+	- in ts
+- every company will strive towards statelessness.
+- applications like
+	- realtime apps 
+	- chess 
+	- exhanges 
+	- etc. need to have some amount of state associated with them.
+	

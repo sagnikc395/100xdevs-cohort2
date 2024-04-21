@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week6/week6.2- redis, pubsubs, messaging queues.md",
+                "file": "week7/week7.2.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "week6/week6.2- redis, pubsubs, messaging queues.md",
+                "file": "week7/week7.2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "week6/week6.2- redis, pubsubs, messaging queues.md",
+                "file": "week7/week7.2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week6/week6.2- redis, pubsubs, messaging queues.md"
+                "file": "week7/week7.2.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "ce11bb48fce662cb",
   "lastOpenFiles": [
+    "week6/week6.2- redis, pubsubs, messaging queues.md",
+    "week7/week7.2.md",
+    "week7",
     "Screenshot 2024-04-07 at 7.39.12 PM.png",
     "Screenshot 2024-04-07 at 7.38.29 PM.png",
     "Screenshot 2024-04-07 at 7.22.53 PM.png",
@@ -157,10 +160,8 @@
     "Screenshot 2024-04-07 at 7.10.12 PM.png",
     "week6/Screenshot 2024-04-07 at 7.04.45 PM.png",
     "Screenshot 2024-03-23 at 7.35.00 PM.png",
-    "week6/week6.2- redis, pubsubs, messaging queues.md",
     "Screenshot 2024-03-23 at 7.27.14 PM.png",
     "Screenshot 2024-03-23 at 7.26.33 PM.png",
-    "Screenshot 2024-03-23 at 7.24.57 PM.png",
     "week6/week6.1- websockets.md",
     "week6",
     "week5/notes.md",
