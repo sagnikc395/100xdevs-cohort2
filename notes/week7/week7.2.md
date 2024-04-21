@@ -31,4 +31,6 @@
 	- chess 
 	- exhanges 
 	- etc. need to have some amount of state associated with them.
-	
+
+- using a class to abstract away operations logic and make it more abstract for end user.
+- using a class like GameManager

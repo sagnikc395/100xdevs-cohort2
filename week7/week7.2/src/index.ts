@@ -1,15 +1,22 @@
 //simulate here updating the states
 
-import initLogger from "./logger";
-import { games } from "./store";
+import { gameManager } from "./store";
 
-initLogger();
+// import initLogger from "./logger";
+// //import { games } from "./store";
+
+// initLogger();
 
 setInterval(() => {
-  games.push({
-    id: Math.random().toString(),
-    whitePlayer: "Alice",
-    blackPlayer: "Denzel",
-    moves: ["1,2", "4,5"],
-  });
+  gameManager.addGame(Math.random().toString());
+  gameManager.logState();
 }, 5000);
+
+// setInterval(() => {
+//   games.push({
+//     id: Math.random().toString(),
+//     whitePlayer: "Alice",
+//     blackPlayer: "Denzel",
+//     moves: ["1,2", "4,5"],
+//   });
+// }, 5000);
