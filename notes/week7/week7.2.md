@@ -39,4 +39,8 @@
 	- make the constructor private
 	- can;t be made from outside the class, but we can make from inside the class using the static variables.
 	- these attributes are associated with the class and not with the objects for static variables.
+
+
+### Pub/subs and singletons:
+- backend servers talk to each other and let one backend server talk to another one.
 - 

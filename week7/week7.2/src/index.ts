@@ -27,10 +27,5 @@ import { startLogger } from "./logger";
 startLogger();
 
 setInterval(() => {
-    GameManager.getSingleton().addGame({
-        id: Math.random().toString(),
-        "whitePlayer": "harkirat",
-        "blackPlayer": "jaskirat",
-        moves: []
-    })
+    GameManager.getSingleton().addGame(Math.random().toString())
 }, 5000)
