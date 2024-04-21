@@ -10,7 +10,7 @@ type Game = {
 // export const games: Game[] = [];
 //a better abstraction
 
-class GameManager {
+export class GameManager {
   games: Game[] = [];
   moves: string[] = [];
   // type of the instance will be of the GameManager type only
@@ -56,4 +56,3 @@ class GameManager {
     console.log(this.moves);
   }
 }
-export const gameManager = GameManager.getSingleton();
